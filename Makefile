@@ -48,7 +48,7 @@ clean-test: ## remove test and coverage artifacts
 	rm -fr .pytest_cache
 
 lint: ## check style with flake8
-	flake8 4space_cubesat tests
+	flake8 cubesat tests
 
 test: ## run tests quickly with the default Python
 	python setup.py test
@@ -57,15 +57,15 @@ test-all: ## run tests on every Python version with tox
 	tox
 
 coverage: ## check code coverage quickly with the default Python
-	coverage run --source 4space_cubesat setup.py test
+	coverage run --source cubesat setup.py test
 	coverage report -m
 	coverage html
 	$(BROWSER) htmlcov/index.html
 
 docs: ## generate Sphinx HTML documentation, including API docs
-	rm -f docs/4space_cubesat.rst
+	rm -f docs/cubesat.rst
 	rm -f docs/modules.rst
-	sphinx-apidoc -o docs/ 4space_cubesat
+	sphinx-apidoc -o docs/ cubesat
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
 	$(BROWSER) docs/_build/html/index.html

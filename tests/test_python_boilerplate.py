@@ -1,17 +1,17 @@
 #!/usr/bin/env python
 
-"""Tests for `4space_cubesat` package."""
+"""Tests for `cubesat` package."""
 
 
 import unittest
 from click.testing import CliRunner
 
-from 4space_cubesat import 4space_cubesat
-from 4space_cubesat import cli
+from cubesat import cubesat
+from cubesat import cli
 
 
-class Test4space_cubesat(unittest.TestCase):
-    """Tests for `4space_cubesat` package."""
+class Testcubesat(unittest.TestCase):
+    """Tests for `cubesat` package."""
 
     def setUp(self):
         """Set up test fixtures, if any."""
@@ -27,7 +27,7 @@ class Test4space_cubesat(unittest.TestCase):
         runner = CliRunner()
         result = runner.invoke(cli.main)
         assert result.exit_code == 0
-        assert '4space_cubesat.cli.main' in result.output
+        assert 'cubesat.cli.main' in result.output
         help_result = runner.invoke(cli.main, ['--help'])
         assert help_result.exit_code == 0
         assert '--help  Show this message and exit.' in help_result.output

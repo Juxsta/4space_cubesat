@@ -25,5 +25,5 @@ deploy:
     secure: PLEASE_REPLACE_ME
   on:
     tags: true
-    repo: Juxsta/4space_cubesat
+    repo: Juxsta/cubesat
     python: 3.8

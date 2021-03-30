@@ -1,1 +1,1 @@
-"""Unit test package for 4space_cubesat."""
+"""Unit test package for cubesat."""

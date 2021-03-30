@@ -3,11 +3,11 @@ Python Boilerplate
 ==================
 
 
-.. image:: https://img.shields.io/pypi/v/4space_cubesat.svg
-        :target: https://pypi.python.org/pypi/4space_cubesat
+.. image:: https://img.shields.io/pypi/v/cubesat.svg
+        :target: https://pypi.python.org/pypi/cubesat
 
-.. image:: https://img.shields.io/travis/Juxsta/4space_cubesat.svg
-        :target: https://travis-ci.com/Juxsta/4space_cubesat
+.. image:: https://img.shields.io/travis/Juxsta/cubesat.svg
+        :target: https://travis-ci.com/Juxsta/cubesat
 
 .. image:: https://readthedocs.org/projects/python-boilerplate/badge/?version=latest
         :target: https://python-boilerplate.readthedocs.io/en/latest/?version=latest
